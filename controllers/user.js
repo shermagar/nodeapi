@@ -6,7 +6,7 @@ exports.index = async(req, res) => {
 
     try {
         const users = await User.find()
-        res.json(req.user)
+        res.json(users)
     } catch (e) {
         res.json(e)
     }
